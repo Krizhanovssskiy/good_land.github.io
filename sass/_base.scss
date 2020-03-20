@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+  -webkit-text-size-adjust: none;
+  height: 100%;
+}
+
+button, input {
+  outline: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-white);
+  background-color: var(--color-bg-task);
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  z-index: 2;
+}
+
+.titleSectionLending {
+  width: 100%;
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 130%;
+  /* or 45px */
+  text-align: center;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+
+  color: var(--color-white);
+}
+
+.titleSectionTaskPages {
+  font-family: var(--font-secondari);
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--text-size-29);
+  line-height: 150%;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.titleItemTaskPage {
+  font-family: var(--font-secondari);
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--text-size-19);
+  line-height: 23px;
+  text-align: center;
+
+  color: var(--color-black);
+}
+
+.textUnderTitle {
+  font-family: var(--font-secondari);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--text-size-20);
+  line-height: 150%;
+
+  color: var(--color-black);
+}
+
+.textLending {
+  font-family: var(--font-secondari);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--text-size-19);
+  line-height: 160%;
+  /* or 30px */
+
+  color: var(--color-white);
+}
+//.//////////////////////////////////////
+
+.bg-01service {
+  min-width: 79px;
+  min-height: 79px;
+  background: url('../img/css_sprites.png') -112px -114px;
+}
+
+.bg-02service {
+  min-width: 82px;
+  min-height: 82px;
+  background: url('../img/css_sprites.png') -10px -114px;
+}
+
+.bg-help {
+  min-width: 18px;
+  min-height: 20px;
+  background: url('../img/css_sprites.png') -217px -170px;
+}
+
+.bg-joystick_1 {
+  min-width: 83px;
+  min-height: 83px;
+  background: url('../img/css_sprites.png') -114px -10px;
+}
+
+.bg-next {
+  min-width: 21px;
+  min-height: 32px;
+  background: url('../img/css_sprites.png') -217px -66px;
+}
+
+.bg-prev {
+  min-width: 21px;
+  min-height: 32px;
+  background: url('../img/css_sprites.png') -217px -118px;
+}
+
+.bg-setting {
+  min-width: 14px;
+  min-height: 15px;
+  background: url('../img/css_sprites.png') -10px -216px;
+}
+
+.bg-token_1 {
+  min-width: 84px;
+  min-height: 84px;
+  background: url('../img/css_sprites.png') -10px -10px;
+}
+
+.bg-Vector {
+  min-width: 49px;
+  min-height: 36px;
+  background: url('../img/css_sprites.png') -217px -10px;
+}
+
+
+
+
+
+
+
+

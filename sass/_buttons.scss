@@ -1,0 +1,181 @@
+@import 'mixins';
+.Btn {
+  &__comeIn {
+    padding: 25px 50px;
+    background: var(--color-transparent);
+    border: 1px solid var(--color-white);
+    font-family: var(--font-secondari);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    color: var(--color-white);
+    cursor: pointer;
+  }
+
+  &__popUp-btn  {
+    padding: 15px 70px;
+    border-color: var(--color-black);
+    background: var(--color-black);
+    color: var(--color-white);
+    cursor: pointer;
+  }
+  &__takeInPlay {
+    padding: 8px 25px;
+    background: var(--color-logo-task);
+    border: none;
+    font-family: var(--font-secondari);
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--text-size-11);
+    line-height: 17px;
+    /* identical to box height, or 155% */
+    color: var(--color-black);
+    cursor: pointer;
+  }
+
+  &__start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 25px;
+    border: none;
+    background: var(--color-black);
+    font-family: var(--font-secondari);
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--text-size-11);
+    line-height: 14px;
+    /* identical to box height, or 117% */
+    letter-spacing: 0.06em;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__transparent {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__borderTransparent {
+    width: 197px;
+    height: 45px;
+    border: 1px solid var(--color-black);
+    font-family: var(--font-secondari);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--text-size-14);
+    line-height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: var(--color-black);
+    cursor: pointer;
+  }
+
+  &__back {
+    @include centering-children;
+    width: 162px;
+    height: 60px;
+    background: transparent;
+    border: 1px solid var(--color-black);
+  }
+
+  &__close {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    &-left {
+      position: absolute;
+      width: 16px;
+      height: 1.85px;
+      background: #000000;
+      transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+    };
+    &-right {
+      position: absolute;
+      width: 16px;
+      height: 1.85px;
+      background: #000000;
+      transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+    }
+  }
+
+  &__radio {
+
+    font-family: var(--font-secondari);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--text-size-15);
+    line-height: 140%;
+
+    color: var(--color-black);
+
+    input[type="radio"]:checked,
+    input[type="radio"]:not(:checked)
+    {
+      position: absolute;
+      left: -9999px;
+    }
+
+    input[type="radio"]:checked + label,
+    input[type="radio"]:not(:checked) + label {
+      display: inline-block;
+      position: relative;
+      padding-left: 28px;
+      line-height: 20px;
+      cursor: pointer;
+      color: var(--color-black);
+    }
+    input[type="radio"]:checked + label:before,
+    input[type="radio"]:not(:checked) + label:before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 21px;
+      height: 21px;
+      border: 1px solid var(--color-black);
+      background-color: transparent;
+    }
+
+    input[type="radio"]:checked + label:before,
+    input[type="radio"]:not(:checked) + label:before {
+      border-radius: 100%;
+    }
+
+    input[type="radio"]:checked + label:after,
+    input[type="radio"]:not(:checked) + label:after {
+      content: "";
+      position: absolute;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+
+
+    input[type="radio"]:checked + label:after,
+    input[type="radio"]:not(:checked) + label:after {
+      left: 5px;
+      top: 5px;
+      width: 11px;
+      height: 11px;
+      border-radius: 100%;
+      background-color: var(--color-black);
+    }
+
+    input[type="radio"]:not(:checked) + label:after {
+      opacity: 0;
+    }
+
+    input[type="radio"]:checked + label:after {
+      opacity: 1;
+    }
+  }
+}

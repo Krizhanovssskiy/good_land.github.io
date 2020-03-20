@@ -1,0 +1,60 @@
+@import 'mixins';
+.HeaderTaskPage {
+  padding: 25px 0;
+  background: var(--color-black);
+
+  .container {
+    @include centering-children;
+    justify-content: space-between;
+
+  }
+
+  &__left {
+    @include centering-children;
+    p {
+      margin-left: 40px;
+      font-family: var(--font-secondari);
+      font-style: normal;
+      font-weight: normal;
+      font-size: var(--text-size-15);
+      line-height: 18px;
+
+      color: var(--color-white);
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: self-end;
+    div {
+      margin: 0 35px 0 20px;
+    }
+    p {
+      font-family: var(--font-secondari);
+      font-style: normal;
+      font-weight: normal;
+      font-size: var(--text-size-11);
+      line-height: 18px;
+      color: rgba(255, 255, 255, 0.6);
+      /* or 164% */
+
+      text-align: right;
+      span {
+        display: block;
+        font-size: var(--text-size-14);
+        color: var(--color-white);
+      }
+    }
+    .bg-help {
+      margin-top: 7px;
+      margin-left: 25px;
+    }
+    .bg-setting {
+      margin-top: 10px;
+    }
+    .bg-setting, .bg-help {
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
