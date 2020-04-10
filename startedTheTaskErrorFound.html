@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./img/faviconGreen.ico" type="image/x-icon">
+    <title>Good Land</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<div class="PopUp RulesPopup">
+    <div class="PopUp__box RulesPopup__complain">
+        <div class="Btn__close">
+            <span class="Btn__close-left"></span>
+            <span class="Btn__close-right"></span>
+        </div>
+
+        <h4>
+            Полный список правил
+        </h4>
+
+        <ul>
+            <li>
+                <p>
+                    - каждое лицо надо отмечать
+                    отдельным квадратиком
+                </p>
+            </li>
+            <li>
+                <p>
+                    - лица показанные частично тоже надо отмечать
+                </p>
+            </li>
+            <li>
+                <p>
+                    - отражение лиц не надо отмечать
+                </p>
+            </li>
+        </ul>
+        <p>
+            После разметки вашу работу проверит модератор
+            и если найдет ошибку - вернет на доработку
+        </p>
+
+        <button class="Btn__borderTransparent">
+            ЗАКРЫТЬ
+        </button>
+    </div>
+</div>
+
+<header class="HeaderTaskPage">
+    <div class="container">
+        <div class="HeaderTaskPage__left">
+            <a href="#" class="logo">
+                <img src="./img/logoGreen.png" alt="good land">
+            </a>
+            <p>
+                Выполняй задания
+                <br>и получай золото в WoT
+            </p>
+        </div>
+        <div class="HeaderTaskPage__right">
+            <p>
+                Заработали:
+                <span>
+                            230 золота
+                        </span>
+            </p>
+            <div>
+                <button class="Btn__takeInPlay">
+                    Забрать в игру
+                </button>
+                <p>
+                    от 100 золота
+                </p>
+            </div>
+            <a href="settings.html" class="bg-setting">
+
+            </a>
+            <a href="help.html" class="bg-help">
+
+            </a>
+        </div>
+
+    </div>
+</header>
+<section class="StartedTheTask">
+    <div class="container">
+        <div class="StartedTheTask__contentTask">
+            <div>
+                <h3>
+                    Отметить лица
+                    <br>
+                    на 12 фотографиях
+                </h3>
+                <p class="textUnderTitle">
+                    Мышкой выделите квадратами
+                    <br>
+                    все лица на фотографиях, даже
+                    <br>
+                    показанные частично.
+                    <br>
+                    <span id="ShowRules">
+                            Показать все правила
+                        </span>
+                </p>
+
+                <div class="StartedTheTask__boxFoundError">
+                    <h5>
+                        Найдена ошибка:
+                    </h5>
+                    <p class="textUnderTitle">
+                        Каждое лицо надо отмечать отдельным квадратиком
+                    </p>
+                </div>
+                <span class="StartedTheTask__text-big">
+                        +100 золота
+                    </span>
+                <p class="textUnderTitle">
+                    ≈ 1-2 мин
+                </p>
+
+                <div class="StartedTheTask__buttons">
+                    <a href="main.html" class="Btn__back">
+                        Назад
+                    </a>
+                    <a href="#" class="Btn__start">
+                        Проверить и исправить
+                    </a>
+                </div>
+            </div>
+
+            <div class="StartedTheTask__imgBox">
+                <div class="StartedTheTask__imgBox-item StartedTheTask__imgBox-error">
+                    <img src="./img/ErrorGroup_365.jpg" alt="err">
+                    <img src="./img/error-2.png" alt="err">
+                </div>
+                <div class="StartedTheTask__imgBox-item StartedTheTask__imgBox-done">
+                    <img src="./img/doneTask.jpg" alt="err">
+                    <img src="./img/done-2.png" alt="err">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<script src="./js/index.js"></script>
+</body>
+</html>
